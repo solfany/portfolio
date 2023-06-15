@@ -45,7 +45,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
 // import ContactUs from "layouts/pages/landing-pages/contact-us";
-// import Author from "layouts/pages/landing-pages/author";
+import Author from "layouts/pages/landing-pages/author";
 // import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
@@ -68,16 +68,23 @@ import AboutUs from "layouts/pages/landing-pages/about-us";
 // import Toggles from "layouts/sections/elements/toggles";
 // import Typography from "layouts/sections/elements/typography";
 
+// import Presentation from "pages/Presentation";
+
 const routes = [
+  // {
+  //   name: "Home",
+  //   route: "/pages/Presentation",
+  //   component: <Presentation />,
+  // },
   {
     name: "about us",
     route: "/pages/landing-pages/about-us",
     component: <AboutUs />,
   },
   {
-    name: "about us",
-    route: "/pages/landing-pages/about-us",
-    component: <AboutUs />,
+    name: "author",
+    route: "/pages/landing-pages/author",
+    component: <Author />,
   },
 
   {

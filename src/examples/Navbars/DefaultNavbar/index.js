@@ -156,14 +156,14 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                         fontWeight="regular"
                         py={0.625}
                         px={2}
-                        sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+                        sx={({ palette: { grey, light }, borders: { borderRadius } }) => ({
                           borderRadius: borderRadius.md,
                           cursor: "pointer",
                           transition: "all 300ms linear",
 
                           "&:hover": {
                             backgroundColor: grey[200],
-                            color: dark.main,
+                            color: light.main,
                           },
                         })}
                       >
@@ -216,21 +216,21 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             variant="button"
             textTransform="capitalize"
             minWidth={item.description ? "14rem" : "12rem"}
-            color={item.description ? "dark" : "text"}
+            color={item.description ? "Light" : "text"}
             fontWeight={item.description ? "bold" : "regular"}
             py={item.description ? 1 : 0.625}
             px={2}
-            sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+            sx={({ palette: { grey, light }, borders: { borderRadius } }) => ({
               borderRadius: borderRadius.md,
               cursor: "pointer",
               transition: "all 300ms linear",
 
               "&:hover": {
                 backgroundColor: grey[200],
-                color: dark.main,
+                color: light.main,
 
                 "& *": {
-                  color: dark.main,
+                  color: light.main,
                 },
               },
             })}
@@ -360,21 +360,21 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                     variant="button"
                     textTransform="capitalize"
                     minWidth={item.description ? "14rem" : "12rem"}
-                    color={item.description ? "dark" : "text"}
+                    color={item.description ? "light" : "text"}
                     fontWeight={item.description ? "bold" : "regular"}
                     py={item.description ? 1 : 0.625}
                     px={2}
-                    sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+                    sx={({ palette: { grey, light }, borders: { borderRadius } }) => ({
                       borderRadius: borderRadius.md,
                       cursor: "pointer",
                       transition: "all 300ms linear",
 
                       "&:hover": {
                         backgroundColor: grey[200],
-                        color: dark.main,
+                        color: light.main,
 
                         "& *": {
-                          color: dark.main,
+                          color: light.main,
                         },
                       },
                     })}
@@ -459,12 +459,13 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
         width={relative ? "100%" : "calc(100% - 48px)"}
         borderRadius="xl"
         shadow={transparent ? "none" : "md"}
-        color={light ? "white" : "dark"}
+        color={light ? "white" : "light"}
         position={relative ? "relative" : "absolute"}
         left={0}
         zIndex={3}
         sx={({ palette: { transparent: transparentColor, white }, functions: { rgba } }) => ({
-          backgroundColor: transparent ? transparentColor.main : rgba(white.main, 0.8),
+          backgroundColor: transparent ? transparentColor.main : rgba(white.main, 0),
+          color: white,
           backdropFilter: transparent ? "none" : `saturate(200%) blur(30px)`,
         })}
       >
@@ -476,7 +477,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
+            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "light"}>
               {brand}
             </MKTypography>
           </MKBox>
@@ -551,7 +552,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "Material Kit 2",
+  brand: "개발괴발..",
   transparent: false,
   light: false,
   action: false,
@@ -578,7 +579,7 @@ DefaultNavbar.propTypes = {
         "success",
         "warning",
         "error",
-        "dark",
+        "light",
         "light",
         "default",
         "white",
