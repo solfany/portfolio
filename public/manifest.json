@@ -1,9 +1,9 @@
 {
-  "short_name": "Material Kit",
-  "name": "Material Kit 2 React",
+  "short_name": "김솔비",
+  "name": "김솔비의 포트폴리오",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "icons8-check-50.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     }

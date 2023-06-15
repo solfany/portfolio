@@ -71,8 +71,8 @@ function Presentation() {
             >
               <MKBox component="li">
                 <MKTypography
-                  component={Link}
-                  href="#"
+                  component={""}
+                  href="/Home"
                   variant="button"
                   color="white"
                   fontWeight="regular"
