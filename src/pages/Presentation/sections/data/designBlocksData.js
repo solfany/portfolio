@@ -13,14 +13,15 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-const imagesPrefix = "src/assets/images";
+const imagesPrefix = "https://github.com/solfany/portfolio/tree/master/src/assets/images/";
 export default [
   {
     title: "개인 프로젝트",
     description: "A selection of 45 page sections that fit perfectly in any combination",
     items: [
       {
-        image: `https://www.creative-tim.com/blog/content/images/size/w750/2023/05/Best-Free-Templates-Frontend---Backend-included.jpg`,
+        image:
+          "https://github.com/solfany/portfolio/blob/master/src/assets/images/project/devtalk.png?raw=true",
         name: "Page Headers",
         count: 10,
         route: "https://solfany.github.io/project_devtalk/",
