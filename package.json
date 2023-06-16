@@ -1,17 +1,17 @@
 {
+  "homepage": "https://solfany.github.io/portfolio/",
   "name": "protfoil",
   "version": "2.1.0",
   "private": true,
-  "author": "Creative Tim",
+  "author": "Solfany",
   "license": "See license in https://www.creative-tim.com/license",
-  "description": "React version of Material Kit 2 by Creative Tim",
-  "homepage": "https://demos.creative-tim.com/material-kit-react/#/",
+  "description": "solfany-protfoil",
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/ct-material-kit-react.git"
+    "url": "git+https://github.com/solfany/portfolio"
   },
   "dependencies": {
     "@emotion/cache": "11.10.7",
@@ -42,7 +42,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
-    "prettify": "prettier --write ."
+    "prettify": "prettier --write .",
+    "deploy": "cp build/index.html build/404.html && gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -71,6 +73,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
+    "gh-pages": "^5.0.0",
     "prettier": "2.8.7"
   }
 }
