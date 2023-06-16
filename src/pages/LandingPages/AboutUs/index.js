@@ -11,13 +11,10 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import SimpleFooter from "examples/Footers/SimpleFooter";
 
 // About Us page sections
 import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 // Routes
 import routes from "routes";
@@ -114,13 +111,8 @@ function AboutUs() {
         }}
       >
         <Information />
-        <Team />
-        <Featuring />
-        <Newsletter />
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      <SimpleFooter content={footerRoutes} />
     </>
   );
 }

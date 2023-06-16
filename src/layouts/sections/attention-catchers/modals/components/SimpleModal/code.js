@@ -1,4 +1,4 @@
-const simpleModalCode = `import { useState } from "react";
+const simpleModalCode = `부리부리eact";
 
 // @mui material components
 import Container from "@mui/material/Container";

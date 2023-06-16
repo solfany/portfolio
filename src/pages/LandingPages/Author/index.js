@@ -14,7 +14,6 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
-import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 
@@ -28,11 +27,11 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 // Author page sections
 import Profile from "pages/LandingPages/Author/sections/Profile";
 // import Posts from "pages/LandingPages/Author/sections/Posts";
-import Contact from "pages/LandingPages/Author/sections/Contact";
-import Footer from "pages/LandingPages/Author/sections/Footer";
+import SimpleFooter from "examples/Footers/SimpleFooter";
 
 // Routes
 import routes from "routes";
+import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/main.png";
@@ -87,23 +86,9 @@ function Author() {
           </Container>
           {/* -- */}
         </MKBox>
-        <Card
-          sx={{
-            p: 2,
-            mx: { xs: 2, lg: 3 },
-            mt: -8,
-            mb: 4,
-            backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
-            backdropFilter: "saturate(200%) blur(30px)",
-            boxShadow: ({ boxShadows: { xxl } }) => xxl,
-          }}
-        >
-          <Profile />
-          {/* <Posts /> */}
-        </Card>
-        <Contact />
-        <Footer />
+        <Profile />
       </MKBox>
+      <SimpleFooter content={footerRoutes} />
     </>
   );
 }

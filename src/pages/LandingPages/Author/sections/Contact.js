@@ -34,7 +34,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/main.png";
-import bgImage2 from "assets/images/apple-icon.png";
+import bgImage2 from "assets/images/wallpaperbetter.jpg";
 // import borders from "assets/theme/base/borders";
 
 function Contact() {
@@ -135,10 +135,13 @@ function Contact() {
             sx={{
               backgroundImage: ({ palette: { gradients }, functions: { rgba, linearGradient } }) =>
                 `${linearGradient(
-                  rgba(gradients.dark.main, 0.8),
-                  rgba(gradients.dark.state, 0.8)
+                  rgba(gradients.dark.main, 0.5),
+                  rgba(gradients.dark.state, 0.5)
                 )}, url(${bgImage2})`,
+              borderTopLeftRadius: 12,
               backgroundSize: "cover",
+              marginBottom: "-17px",
+              borderBottomLeftRadius: 12,
             }}
           >
             <MKBox
@@ -167,7 +170,7 @@ function Contact() {
                     ml={2}
                     fontWeight="regular"
                   >
-                    (+40) 772 100 200
+                    (+82)010 0000 0000
                   </MKTypography>
                 </MKBox>
                 <MKBox display="flex" color="white" p={1}>
@@ -182,7 +185,7 @@ function Contact() {
                     ml={2}
                     fontWeight="regular"
                   >
-                    hello@creative-tim.com
+                    solfany1999@gmail.com
                   </MKTypography>
                 </MKBox>
                 <MKBox display="flex" color="white" p={1}>
@@ -197,7 +200,7 @@ function Contact() {
                     ml={2}
                     fontWeight="regular"
                   >
-                    Dyonisie Wolf Bucharest, RO 010458
+                    거주지 : 용인
                   </MKTypography>
                 </MKBox>
                 <MKBox mt={3}>
@@ -221,10 +224,10 @@ function Contact() {
             <MKBox component="form" p={2} method="post">
               <MKBox px={3} py={{ xs: 2, sm: 6 }}>
                 <MKTypography variant="h2" mb={1}>
-                  Say Hi!
+                  이메일을 보내보세요!
                 </MKTypography>
                 <MKTypography variant="body1" color="text" mb={2}>
-                  We&apos;d like to talk with you.
+                  하단에서 이메일 발송 가능합니다.
                 </MKTypography>
               </MKBox>
               <MKBox pt={0.5} pb={3} px={3}>
@@ -232,7 +235,7 @@ function Contact() {
                   <Grid item xs={12} pr={1} mb={6}>
                     <MKInput
                       variant="standard"
-                      label="My name is"
+                      label="Email"
                       placeholder="Full Name"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
@@ -241,7 +244,7 @@ function Contact() {
                   <Grid item xs={12} pr={1} mb={6}>
                     <MKInput
                       variant="standard"
-                      label="I'm looking for"
+                      label="참조"
                       placeholder="What you love"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
@@ -268,7 +271,7 @@ function Contact() {
                   textAlign="right"
                   ml="auto"
                 >
-                  <MKButton variant="gradient" color="info">
+                  <MKButton variant="gradient" color="light">
                     Send Message
                   </MKButton>
                 </Grid>

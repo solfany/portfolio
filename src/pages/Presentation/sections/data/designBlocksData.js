@@ -1,7 +1,6 @@
 // 프로젝트 목록 관리
 
-const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections";
+const imagesPrefix = "https://github.com/solfany/portfolio/tree/master/src/assets/images";
 export default [
   {
     title: "개인 프로젝트",
@@ -9,7 +8,7 @@ export default [
     items: [
       {
         image:
-          "https://github.com/solfany/portfolio/blob/master/src/assets/images/project/devtalk.png?raw=true h",
+          "https://github.com/solfany/portfolio/blob/master/src/assets/images/project/davtalk.png?raw=true",
         name: "Page Headers",
         count: 10,
         route: "https://solfany.github.io/project_devtalk/",
@@ -20,78 +19,6 @@ export default [
         name: "Features",
         count: 14,
         route: "/sections/page-sections/features",
-      },
-      {
-        image: `${imagesPrefix}/pricing.jpg`,
-        name: "Pricing",
-        count: 8,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/faq.jpg`,
-        name: "FAQ",
-        count: 1,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/blogs.jpg`,
-        name: "Blog Posts",
-        count: 11,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/testimonials.jpg`,
-        name: "Testimonials",
-        count: 11,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/teams.jpg`,
-        name: "Teams",
-        count: 6,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/stats.jpg`,
-        name: "Stats",
-        count: 3,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/call-to-action.jpg`,
-        name: "Call to Actions",
-        count: 8,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/projects.jpg`,
-        name: "Applications",
-        count: 6,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/logo-area.jpg`,
-        name: "Logo Areas",
-        count: 4,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/footers.jpg`,
-        name: "Footers",
-        count: 10,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/general-cards.jpg`,
-        name: "General Cards",
-        count: 9,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/content-sections.jpg`,
-        name: "Content Sections",
-        count: 8,
-        pro: true,
       },
     ],
   },

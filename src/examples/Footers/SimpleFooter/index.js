@@ -1,18 +1,3 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -28,26 +13,9 @@ import MKTypography from "components/MKTypography";
 // Material Kit 2 React base styles
 import typography from "assets/theme/base/typography";
 
-function SimpleFooter({ company, links, light }) {
+function SimpleFooter({ company, light }) {
   const { href, name } = company;
   const { size } = typography;
-
-  const renderLinks = () =>
-    links.map((link, key) => (
-      <MKBox
-        key={link.name}
-        component="li"
-        pl={key === 0 ? 0 : 2}
-        pr={key === links.length - 1 ? 0 : 2}
-        lineHeight={1}
-      >
-        <Link href={link.href} target="_blank">
-          <MKTypography variant="button" fontWeight="regular" color={light ? "white" : "text"}>
-            {link.name}
-          </MKTypography>
-        </Link>
-      </MKBox>
-    ));
 
   return (
     <Container>
@@ -88,17 +56,15 @@ function SimpleFooter({ company, links, light }) {
             alignItems: "center",
             justifyContent: "center",
             listStyle: "none",
-            mt: 3,
+            mt: 0,
             mb: 0,
-            p: 0,
+            p: 5,
 
             [breakpoints.up("lg")]: {
               mt: 0,
             },
           })}
-        >
-          {renderLinks()}
-        </MKBox>
+        ></MKBox>
       </MKBox>
     </Container>
   );
@@ -106,20 +72,13 @@ function SimpleFooter({ company, links, light }) {
 
 // Setting default values for the props of SimpleFooter
 SimpleFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-  links: [
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
-  ],
+  company: { href: "https://github.com/solfany", name: "solfany" },
   light: false,
 };
 
 // Typechecking props for the SimpleFooter
 SimpleFooter.propTypes = {
   company: PropTypes.objectOf(PropTypes.string),
-  links: PropTypes.arrayOf(PropTypes.shape),
   light: PropTypes.bool,
 };
 

@@ -10,7 +10,7 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import SimpleFooter from "examples/Footers/SimpleFooter";
 // import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
@@ -36,7 +36,14 @@ import bgImage from "assets/images/main.png";
 // import Link from "@mui/material/Link";
 
 // import Profile from "./Profile";
+// Sections components
+// import View from "layouts/sections/components/View";
 
+// Modals page components
+// import SimpleModal from "layouts/sections/attention-catchers/modals/components/SimpleModal";
+
+// Modals page components code
+// import simpleModalCode from "layouts/sections/attention-catchers/modals/components/SimpleModal/code";
 // author 자기소개 페이지
 
 function Presentation() {
@@ -113,9 +120,15 @@ function Presentation() {
 
         {/* 프로젝트 */}
         <DesignBlocks />
+
+        {/* 모달 입니당 */}
+        {/* <View title="function SimpleModal() " code={simpleModalCode}>
+          얘는 모달
+        </View> */}
+
+        {/* 모달입니다 */}
         {/* <Pages /> */}
 
-        <Container sx={{ mt: 6 }}>{/* <BuiltByDevelopers /> */}</Container>
         {/* <Container> */}
         {/* <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
@@ -216,7 +229,7 @@ function Presentation() {
         {/* </MKBox> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+        <SimpleFooter content={footerRoutes} />
       </MKBox>
     </>
   );
