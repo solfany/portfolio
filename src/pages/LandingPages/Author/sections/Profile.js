@@ -10,7 +10,7 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
-import profilePicture from "assets/images/bruce-mars.jpg";
+import profilePicture from "assets/images/profil-img.jpeg";
 
 function Profile() {
   return (
@@ -18,7 +18,8 @@ function Profile() {
       <Container>
         <Grid container item xs={12} justifyContent="center" mx="auto">
           <MKBox mt={{ xs: -16, md: -20 }} textAlign="center">
-            <MKAvatar src={profilePicture} alt="Burce Mars" size="xxl" shadow="xl" />
+            {/* 프로필 */}
+            <MKAvatar src={profilePicture} alt="Burce Mars" size="xxxl" shadow="xl" />
           </MKBox>
           <Grid container justifyContent="center" py={6}>
             <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>

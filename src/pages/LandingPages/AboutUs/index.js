@@ -1,18 +1,4 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
+// Adout us
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -21,7 +7,7 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -38,33 +24,33 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "assets/images/main.png";
 
 function AboutUs() {
   return (
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "default",
-        }}
+        // action={{
+        //   type: "external",
+        //   route: "https://www.creative-tim.com/product/material-kit-react",
+        //   label: "free download",
+        //   color: "default",
+        // }}
         transparent
         light
       />
       <MKBox
-        minHeight="75vh"
+        minHeight="85vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.dark.main, 0.6),
-              rgba(gradients.dark.state, 0.6)
+              rgba(gradients.dark.main, 0.5),
+              rgba(gradients.dark.state, 0.5)
             )}, url(${bgImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top",
           display: "grid",
           placeItems: "center",
         }}
@@ -89,15 +75,15 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              기술 스택
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
               We&apos;re constantly trying to express ourselves and actualize our dreams. If you
               have the opportunity to play this game
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
+            {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
-            </MKButton>
+            </MKButton> */}
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
             </MKTypography>

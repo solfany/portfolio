@@ -15,16 +15,19 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Card from "@mui/material/Card";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Author page sections
 import Profile from "pages/LandingPages/Author/sections/Profile";
-import Posts from "pages/LandingPages/Author/sections/Posts";
+// import Posts from "pages/LandingPages/Author/sections/Posts";
 import Contact from "pages/LandingPages/Author/sections/Contact";
 import Footer from "pages/LandingPages/Author/sections/Footer";
 
@@ -32,38 +35,58 @@ import Footer from "pages/LandingPages/Author/sections/Footer";
 import routes from "routes";
 
 // Images
-import bgImage from "assets/images/city-profile.jpg";
+import bgImage from "assets/images/main.png";
 
 function Author() {
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
-        transparent
-        light
-      />
+      <DefaultNavbar routes={routes} transparent light />
       <MKBox bgColor="white">
         <MKBox
-          minHeight="25rem"
+          minHeight="85vh"
           width="100%"
           sx={{
             backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
               `${linearGradient(
-                rgba(gradients.dark.main, 0.8),
-                rgba(gradients.dark.state, 0.8)
+                rgba(gradients.dark.main, 0.5),
+                rgba(gradients.dark.state, 0.5)
               )}, url(${bgImage})`,
+
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "top",
             display: "grid",
             placeItems: "center",
           }}
-        />
+        >
+          {/* -- */}
+          <Container>
+            <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+              <MKTypography
+                variant="h1"
+                color="white"
+                mt={-6}
+                mb={1}
+                sx={({ breakpoints, typography: { size } }) => ({
+                  [breakpoints.down("md")]: {
+                    fontSize: size["3xl"],
+                  },
+                })}
+              >
+                세상을 바꾸는 개발자{" "}
+              </MKTypography>
+              <MKTypography
+                variant="body1"
+                color="white"
+                textAlign="center"
+                px={{ xs: 6, lg: 12 }}
+                mt={1}
+              >
+                함께 하기에 가능하다.<br></br> 소통하는 개발자 김솔비
+              </MKTypography>
+            </Grid>
+          </Container>
+          {/* -- */}
+        </MKBox>
         <Card
           sx={{
             p: 2,
@@ -76,7 +99,7 @@ function Author() {
           }}
         >
           <Profile />
-          <Posts />
+          {/* <Posts /> */}
         </Card>
         <Contact />
         <Footer />

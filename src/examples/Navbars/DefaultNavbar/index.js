@@ -85,6 +85,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
     <DefaultNavbarDropdown
       key={name}
       name={name}
+      style={{ color: "white" }}
       icon={icon}
       href={href}
       route={route}
@@ -551,15 +552,15 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 }
 
 // Setting default values for the props of DefaultNavbar
-DefaultNavbar.defaultProps = {
-  brand: "개발괴발..",
-  transparent: false,
-  light: false,
-  action: false,
-  sticky: false,
-  relative: false,
-  center: false,
-};
+// DefaultNavbar.defaultProps = {
+//   brand: "개발괴발..",
+//   transparent: false,
+//   light: false,
+//   action: false,
+//   sticky: false,
+//   relative: false,
+//   center: false,
+// };
 
 // Typechecking props for the DefaultNavbar
 DefaultNavbar.propTypes = {
