@@ -35,14 +35,14 @@ export default [
       //   image: `${imagesPrefix}/nav-tabs.jpg`,
       //   name: "Nav Tabs",
       //   count: 2,
-      //   route: "/sections/navigation/nav-tabs",
+      //   route: "/sections/navigatioㅂㅁㅁㅁn/nav-tabs",
       // },
-      // {
-      //   image: `${imagesPrefix}/pagination.jpg`,
-      //   name: "Pagination",
-      //   count: 3,
-      //   route: "/sections/navigation/pagination",
-      // },
+      {
+        image: `/pagination.jpg`,
+        name: "Pagination",
+        count: 3,
+        route: "/sections/navigation/pagination",
+      },
     ],
   },
   // {
