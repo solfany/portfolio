@@ -1,21 +1,19 @@
 // 프로젝트 목록 관리
 
-const imagesPrefix = "https://github.com/solfany/portfolio/tree/master/src/assets/images";
 export default [
   {
     title: "개인 프로젝트",
-    description: "A selection of 45 page sections that fit perfectly in any combination",
+    description: "",
     items: [
       {
         image:
-          "https://github.com/solfany/portfolio/blob/master/src/assets/images/project/davtalk.png?raw=true",
+          "https://github.com/solfany/portfolio/blob/master/src/assets/images/project/devtalk.png?raw=true",
         name: "Page Headers",
         count: 10,
         route: "https://solfany.github.io/project_devtalk/",
       },
       {
-        image:
-          "https://github.com/solfany/portfolio/blob/master/src/assets/images/bruce-mars.jpg?raw=true",
+        image: "",
         name: "Features",
         count: 14,
         route: "/sections/page-sections/features",
@@ -24,26 +22,27 @@ export default [
   },
   {
     title: "팀 프로젝트",
-    description: "30+ components that will help go through the pages",
+    description: "",
     items: [
       {
-        image: `${imagesPrefix}/navbars.jpg`,
+        image:
+          "https://github.com/solfany/portfolio/blob/master/src/assets/images/project/wag.png?raw=true",
         name: "Navbars",
         count: 4,
-        route: "/sections/navigation/navbars",
+        route: "https://solfany.github.io/project01/",
       },
-      {
-        image: `${imagesPrefix}/nav-tabs.jpg`,
-        name: "Nav Tabs",
-        count: 2,
-        route: "/sections/navigation/nav-tabs",
-      },
-      {
-        image: `${imagesPrefix}/pagination.jpg`,
-        name: "Pagination",
-        count: 3,
-        route: "/sections/navigation/pagination",
-      },
+      // {
+      //   image: `${imagesPrefix}/nav-tabs.jpg`,
+      //   name: "Nav Tabs",
+      //   count: 2,
+      //   route: "/sections/navigation/nav-tabs",
+      // },
+      // {
+      //   image: `${imagesPrefix}/pagination.jpg`,
+      //   name: "Pagination",
+      //   count: 3,
+      //   route: "/sections/navigation/pagination",
+      // },
     ],
   },
   // {
