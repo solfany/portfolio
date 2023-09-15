@@ -45,7 +45,7 @@ import bgImage from "assets/images/main.png";
 // Modals page components code
 // import simpleModalCode from "layouts/sections/attention-catchers/modals/components/SimpleModal/code";
 // author 자기소개 페이지
-
+import "./index.css";
 function Presentation() {
   return (
     <>
@@ -77,7 +77,7 @@ function Presentation() {
         <Container>
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKTypography
-              variant="h1"
+              variant="h3"
               color="white"
               mt={-6}
               mb={1}
@@ -87,16 +87,9 @@ function Presentation() {
                 },
               })}
             >
-              김솔비의 포트폴리오{" "}
-            </MKTypography>
-            <MKTypography
-              variant="body1"
-              color="white"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
-            >
-              함께 하기에 가능하다.<br></br> 소통하는 개발자 김솔비
+              <div className="mampel-container">
+                <h3 className="TitleText">김솔비의 portfolio</h3>
+              </div>{" "}
             </MKTypography>
           </Grid>
         </Container>

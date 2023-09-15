@@ -1,0 +1,62 @@
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+.mampel-container .TitleText { 
+    font: bold 300% Consolas, Monaco, monospace;
+    border-right: .1em solid black;
+    color: aliceblue;
+    width: 21ch; /* 16.5em을 덮어쓰므로 21ch만 남깁니다. */
+    margin: 2em 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    /* animation 속성에 모든 브라우저 접두사 추가 */
+    -webkit-animation: typing 2s steps(21, end),
+                blink-caret .5s step-end infinite alternate;
+    -moz-animation: typing 2s steps(21, end),
+                blink-caret .5s step-end infinite alternate;
+    -ms-animation: typing 2s steps(21, end),
+                blink-caret .5s step-end infinite alternate;
+    -o-animation: typing 2s steps(21, end),
+                blink-caret .5s step-end infinite alternate;
+    animation: typing 2s steps(21, end),
+                blink-caret .5s step-end infinite alternate;
+}
+
+
+/* .TitleText{
+    position: fixed;
+} */
+.mText{
+    /* position: fixed; */
+    background-color: aquamarine;
+}
+
+/* 
+/* 브라우저 창이 1200px 이하일 때 */
+@media (max-width: 1200px) {
+    .mampel-container .TitleText {
+        font-size: 250%;
+    }
+}
+
+/* 브라우저 창이 992px 이하일 때 */
+@media (max-width: 992px) {
+    .mampel-container .TitleText {
+        font-size: 200%;
+    }
+}
+
+/* 브라우저 창이 768px 이하일 때 */
+@media (max-width: 768px) {
+    .mampel-container .TitleText {
+        font-size: 150%;
+    }
+}
+
+/* 브라우저 창이 576px 이하일 때 */
+@media (max-width: 576px) {
+    .mampel-container .TitleText {
+        font-size: 100%;
+    }
+}
