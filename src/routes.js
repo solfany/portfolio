@@ -46,7 +46,6 @@ const routes = [
   // },
   // {
   //   name: "Contact",
-
   //   route: "/pages/landing-pages/contact-us",
   //   component: <Contact />,
   // },

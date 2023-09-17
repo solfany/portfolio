@@ -23,14 +23,25 @@
                 blink-caret .5s step-end infinite alternate;
 }
 
+/* 첫 번째 문장에는 지연 시간을 주지 않습니다. */
+.mampel-container .TitleText:nth-child(1) {
+    animation: typing 2s steps(21, end) forwards, blink-caret .5s step-end infinite alternate;
+}
 
+/* 두 번째 문장은 첫 번째 문장의 애니메이션 후에 시작하므로 2초의 지연을 줍니다. */
+.mampel-container .TitleText:nth-child(2) {
+    animation: typing 2s steps(21, end) forwards, blink-caret .5s step-end infinite alternate;
+    animation-delay: 2s; /* 첫 번째 애니메이션이 끝난 후 시작 */
+}
+
+/* 세 번째 문장은 첫 번째와 두 번째 문장의 애니메이션 후에 시작하므로 4초의 지연을 줍니다. */
+.mampel-container .TitleText:nth-child(3) {
+    animation: typing 2s steps(21, end) forwards, blink-caret .5s step-end infinite alternate;
+    animation-delay: 4s; /* 이전 두 애니메이션이 끝난 후 시작 */
+}
 /* .TitleText{
     position: fixed;
 } */
-.mText{
-    /* position: fixed; */
-    background-color: aquamarine;
-}
 
 /* 
 /* 브라우저 창이 1200px 이하일 때 */

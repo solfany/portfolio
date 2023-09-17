@@ -6,6 +6,7 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import BoardPages from "pages/Presentation/sections/BoardPages";
 
 // Material Kit 2 React themes
 import theme from "assets/theme";
@@ -42,6 +43,7 @@ export default function App() {
       <Routes>
         {getRoutes(routes)}
         <Route path="/presentation" element={<Presentation />} />
+        <Route path="/boardpages" element={<BoardPages />} /> {/* 수정된 부분 */}
         <Route path="*" element={<Navigate to="/presentation" />} />
       </Routes>
     </ThemeProvider>

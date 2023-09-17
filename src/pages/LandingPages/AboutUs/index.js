@@ -7,7 +7,8 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-// import MKButton from "components/MKButton";
+import MKButton from "components/MKButton";
+// import BulletinBoard from "components/Board";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -19,7 +20,6 @@ import Information from "pages/LandingPages/AboutUs/sections/Information";
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
-
 // Images
 import bgImage from "assets/images/main.png";
 
@@ -112,6 +112,7 @@ function AboutUs() {
       >
         <Information />
       </Card>
+      <MKButton />
       <SimpleFooter content={footerRoutes} />
     </>
   );

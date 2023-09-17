@@ -1,0 +1,119 @@
+.centered-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 5rem;
+  font-size: 1rem;
+  border: 0.05rem solid rgb(190, 187, 192);
+  box-shadow:#302f2f;
+  background-color: aliceblue;
+}
+
+.select {
+  border: none;
+  border-bottom: 1px solid #c2bdbd;
+  border-radius: 0.3rem;
+  height: 1.75rem;
+  width: 100%;
+  color: #a19e9e;
+
+}
+.select:hover {
+  border-bottom: 1px solid #1f76e7;
+  background-color: aliceblue;
+  color: #242424;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.DataCell:hover {
+  background-color: #22ee7e;
+}
+
+/* 글씨 색상 */
+.CTableTitle{
+  color: #030303;
+  font-size: large;
+}
+/* Basic Reset */
+
+
+/* Container & Card */
+.centered-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Heading */
+.boardTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Search & Dropdown Styles */
+.select, .MKInput {
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+/* Table Styles */
+.full-width-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.CTableTitle {
+  background-color: #fafafa;
+}
+
+.CTableDataCell {
+  padding: 8px 16px;
+  border: 1px solid #f0f0f0;
+}
+
+.DataCell:hover {
+  background-color: #f5f5f5;
+}
+
+.Link {
+  color: #0095f6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Link:hover {
+  color: #005aad;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.MKPagination {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+.MKPagination:hover {
+  background-color: #e7e7e7;
+}

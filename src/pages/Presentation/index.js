@@ -15,9 +15,10 @@ import SimpleFooter from "examples/Footers/SimpleFooter";
 
 // Presentation page sections
 // ---- 수치----------
-// import Counters from "pages/Presentation/sections/Counters";
+import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
+
 // import Pages from "pages/Presentation/sections/Pages";
 // import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
@@ -37,13 +38,13 @@ import bgImage from "assets/images/main.png";
 
 // import Profile from "./Profile";
 // Sections components
-// import View from "layouts/sections/components/View";
+import View from "layouts/sections/components/View";
 
 // Modals page components
-// import SimpleModal from "layouts/sections/attention-catchers/modals/components/SimpleModal";
+import SimpleModal from "layouts/sections/attention-catchers/modals/components/SimpleModal";
 
 // Modals page components code
-// import simpleModalCode from "layouts/sections/attention-catchers/modals/components/SimpleModal/code";
+import simpleModalCode from "layouts/sections/attention-catchers/modals/components/SimpleModal/code";
 // author 자기소개 페이지
 import "./index.css";
 function Presentation() {
@@ -75,25 +76,57 @@ function Presentation() {
         {/* ---- */}
 
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <div className="mampel-container">
+            <h6 className="TitleText">꿈꾸는자</h6>
+          </div>
+          <Grid
+            container
+            item
+            xs={12}
+            lg={8}
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+            sx={{ mx: "auto", textAlign: "center" }}
+          >
             <MKTypography
-              variant="h3"
+              variant="h1"
               color="white"
-              mt={-6}
-              mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["3xl"],
                 },
               })}
             >
-              <div className="mampel-container">
-                <h3 className="TitleText">김솔비의 portfolio</h3>
-              </div>{" "}
+              김솔비
             </MKTypography>
+            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
+              의 포트폴리오를 방문해주셔서 감사합니다.
+            </MKTypography>
+            {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
+              create account
+            </MKButton> */}
+            <MKTypography variant="h6" color="white" mt={8} mb={1}>
+              Find us on
+            </MKTypography>
+            <MKBox display="flex" justifyContent="center" alignItems="center">
+              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+                <i className="fab fa-facebook" />
+              </MKTypography>
+              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+                <i className="fab fa-instagram" />
+              </MKTypography>
+              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+                <i className="fab fa-twitter" />
+              </MKTypography>
+              <MKTypography component="a" variant="body1" color="white" href="#">
+                <i className="fab fa-google-plus" />
+              </MKTypography>
+            </MKBox>
           </Grid>
         </Container>
       </MKBox>
+      <Counters />
 
       <Card
         sx={{
@@ -106,19 +139,17 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        {/* <Counters /> */}
         {/* 자기소개 카드 */}
         <Information />
         <Download />
 
         {/* 프로젝트 */}
         <DesignBlocks />
-
         {/* 모달 입니당 */}
-        {/* <View title="function SimpleModal() " code={simpleModalCode}>
+        <View title="function SimpleModal() " code={simpleModalCode}>
           얘는 모달
-        </View> */}
-
+        </View>
+        <SimpleModal />
         {/* 모달입니다 */}
         {/* <Pages /> */}
 
