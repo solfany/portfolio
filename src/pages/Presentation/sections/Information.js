@@ -24,11 +24,11 @@ import MKBox from "components/MKBox";
 import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
-import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
+// import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 // Images
-import bgFront from "assets/images/profil-img.jpeg";
-import bgBack from "assets/images/profil-img.jpeg";
+import bgFront from "assets/images/solfany_portfolio.jpg";
+import bgBack from "assets/images/solfany_portfolio.jpg";
 
 function Information() {
   return (
@@ -62,7 +62,9 @@ function Information() {
             </RotatingCard>
           </Grid>
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
-            <Grid container spacing={3}>
+            <h2 className="title">About me</h2>
+            <h6 className="title">ー who i am ー</h6>
+            {/* <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="content_copy"
@@ -93,8 +95,8 @@ function Information() {
                   title="자기소개"
                   description="Regardless of the screen size, the website content will naturally fit the given resolution."
                 />
-              </Grid>
-            </Grid>
+              </Grid> */}
+            {/* </Grid> */}
           </Grid>
         </Grid>
       </Container>

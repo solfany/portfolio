@@ -38,14 +38,15 @@ import bgImage from "assets/images/main.png";
 
 // import Profile from "./Profile";
 // Sections components
-import View from "layouts/sections/components/View";
+// import View from "layouts/sections/components/View";
 
 // Modals page components
-import SimpleModal from "layouts/sections/attention-catchers/modals/components/SimpleModal";
+// import SimpleModal from "layouts/sections/attention-catchers/modals/components/SimpleModal";
 
 // Modals page components code
-import simpleModalCode from "layouts/sections/attention-catchers/modals/components/SimpleModal/code";
+// import simpleModalCode from "layouts/sections/attention-catchers/modals/components/SimpleModal/code";
 // author 자기소개 페이지
+import TypeAsyncComponent from "./sections/TypeAsyncComponent";
 import "./index.css";
 function Presentation() {
   return (
@@ -77,7 +78,7 @@ function Presentation() {
 
         <Container>
           <div className="mampel-container">
-            <h6 className="TitleText">꿈꾸는자</h6>
+            <TypeAsyncComponent /> {/* Add this line to include your component */}
           </div>
           <Grid
             container
@@ -126,7 +127,6 @@ function Presentation() {
           </Grid>
         </Container>
       </MKBox>
-      <Counters />
 
       <Card
         sx={{
@@ -146,10 +146,8 @@ function Presentation() {
         {/* 프로젝트 */}
         <DesignBlocks />
         {/* 모달 입니당 */}
-        <View title="function SimpleModal() " code={simpleModalCode}>
-          얘는 모달
-        </View>
-        <SimpleModal />
+        <Counters />
+
         {/* 모달입니다 */}
         {/* <Pages /> */}
 
