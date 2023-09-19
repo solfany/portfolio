@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'GangwonEdu_OTFBoldA', sans-serif;
+  /* sans-serif는 대체 폰트로 지정됩니다. */
+}
+
+.blinking-cursor {
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.type-async {
+  color: rgb(132, 0, 255);
+}
+
+.informationIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.mTitle {
+  color: black;
+}
+
+.mTitle {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: start;
+}
+
+.locationEmail {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.locationEmail img {
+  margin-right: 10px;
+}
+
+.locationEmail a {
+  color: #000000;
+  /* 예시로 파란색을 사용 */
+  text-decoration: none;
+}
+
+.locationEmail a:hover {
+  text-decoration: underline;
+}
+
+.projectTitle {
+  text-align: center;
+}
+.BolgTitle{
+  text-align: center;
+}

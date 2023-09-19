@@ -1,18 +1,4 @@
-/* eslint-disable no-param-reassign */
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
+// 기본 레이아웃 페이지
 
 import { Fragment, useState, useEffect } from "react";
 
@@ -30,6 +16,7 @@ import Grow from "@mui/material/Grow";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import MuiLink from "@mui/material/Link";
+import "./index.css";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -67,7 +54,6 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
         setMobileNavbar(false);
       }
     }
-
     /** 
      The event listener that's calling the displayMobileNavbar function when 
      resizing the window.
@@ -551,16 +537,16 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
   );
 }
 
-// Setting default values for the props of DefaultNavbar
-// DefaultNavbar.defaultProps = {
-//   brand: "개발괴발..",
-//   transparent: false,
-//   light: false,
-//   action: false,
-//   sticky: false,
-//   relative: false,
-//   center: false,
-// };
+// 로고 들어가는 자리
+DefaultNavbar.defaultProps = {
+  brand: "김솔비의 portfolio",
+  transparent: false,
+  light: false,
+  action: false,
+  sticky: false,
+  relative: false,
+  center: false,
+};
 
 // Typechecking props for the DefaultNavbar
 DefaultNavbar.propTypes = {

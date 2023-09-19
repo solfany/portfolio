@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./TypeAsyncComponent.css";
+import "./css/index.css";
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -9,9 +9,10 @@ class TypeAsyncComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: "", // 초기 텍스트를 빈 문자열로 설정
+      text: "",
+      isAnimating: true, // 추가된 상태
     };
-    this.typeInterval = 100; // 타이핑 속도를 조절 (원하는대로 수정)
+    this.typeInterval = 100;
   }
 
   componentDidMount() {
@@ -19,31 +20,36 @@ class TypeAsyncComponent extends Component {
   }
 
   async init() {
-    let isAnimating = true;
-    while (isAnimating) {
-      await this.type("CodePen!");
+    while (this.state.isAnimating) {
+      await this.type("JavaScript");
       await sleep(2000);
-      await this.delete("CodePen!");
-      await this.type("World!");
+      await this.delete("JavaScript!");
+      await this.type("React");
       await sleep(2000);
-      await this.delete("World!");
-
-      // Set isAnimating to false to exit the loop if needed
-      // Example: if (someCondition) isAnimating = false;
+      await this.delete("React");
+      await this.type("Java");
+      await sleep(2000);
+      await this.delete("Java");
+      await this.type("Spring");
+      await sleep(2000);
+      await this.delete("Spring");
+      await this.type("꿈꾸는 개발자");
+      await sleep(2000);
+      await this.delete("꿈꾸는 개발자");
     }
   }
 
   async type(text) {
     for (let character of text) {
-      await sleep(this.typeInterval); // 타이핑 간격만큼 대기
+      await sleep(this.typeInterval);
       this.setState((prevState) => ({
-        text: prevState.text + character, // 문자 하나씩 추가
+        text: prevState.text + character,
       }));
     }
   }
 
   async delete(text) {
-    for (let _ of text) {
+    for (let i = 0; i < text.length; i++) {
       await sleep(this.typeInterval);
       this.setState((prevState) => ({
         text: prevState.text.slice(0, -1),

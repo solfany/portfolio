@@ -15,14 +15,13 @@ import SimpleFooter from "examples/Footers/SimpleFooter";
 
 // Presentation page sections
 // ---- 수치----------
-import Counters from "pages/Presentation/sections/Counters";
+// import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 
 // import Pages from "pages/Presentation/sections/Pages";
 // import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
-
 // Presentation page components
 // import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
@@ -32,6 +31,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/main.png";
+import "./sections/css/index.css";
 
 // import MKButton from "components/MKButton";
 // import Link from "@mui/material/Link";
@@ -77,9 +77,6 @@ function Presentation() {
         {/* ---- */}
 
         <Container>
-          <div className="mampel-container">
-            <TypeAsyncComponent /> {/* Add this line to include your component */}
-          </div>
           <Grid
             container
             item
@@ -93,21 +90,35 @@ function Presentation() {
             <MKTypography
               variant="h1"
               color="white"
-              sx={({ breakpoints, typography: { size } }) => ({
+              sx={({ breakpoints }) => ({
+                fontSize: "4rem", // 직접 rem 단위나 다른 단위로 크기 설정
                 [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
+                  fontSize: "3rem",
                 },
               })}
+              className="mainTitle"
             >
-              김솔비
+              <h2>김솔비</h2>
             </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              의 포트폴리오를 방문해주셔서 감사합니다.
+            <MKTypography
+              variant="body1"
+              color="white"
+              opacity={0.8}
+              mt={1}
+              mb={3}
+              sx={{
+                fontSize: "2rem", // 직접 크기 설정
+              }}
+            >
+              <h5>의 포트폴리오를 방문해주셔서 감사합니다.</h5>
             </MKTypography>
+            <div className="mampel-container">
+              <TypeAsyncComponent /> {/* Add this line to include your component */}
+            </div>
             {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
             </MKButton> */}
-            <MKTypography variant="h6" color="white" mt={8} mb={1}>
+            {/* <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
@@ -123,7 +134,7 @@ function Presentation() {
               <MKTypography component="a" variant="body1" color="white" href="#">
                 <i className="fab fa-google-plus" />
               </MKTypography>
-            </MKBox>
+            </MKBox> */}
           </Grid>
         </Container>
       </MKBox>
@@ -146,7 +157,20 @@ function Presentation() {
         {/* 프로젝트 */}
         <DesignBlocks />
         {/* 모달 입니당 */}
-        <Counters />
+        {/* <Counters /> */}
+        <MKTypography variant="h2" fontWeight="bold" className="BolgTitle">
+          <h2>Bolg</h2>
+          <h5>— What did you study? —</h5>
+        </MKTypography>
+        <MKBox component="section" py={10}>
+          <Container>
+            <iframe
+              src="https://solfany.github.io/"
+              style={{ width: "100%", height: "500px", border: "none" }}
+              title="solfany-blog"
+            />
+          </Container>
+        </MKBox>
 
         {/* 모달입니다 */}
         {/* <Pages /> */}

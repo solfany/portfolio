@@ -3,8 +3,8 @@
   flex-direction: column;
   border-radius: 1rem;
   padding: 5rem;
-  font-size: 1rem;
-  border: 0.05rem solid rgb(190, 187, 192);
+  font-size: 1.235rem;
+  /* border: 0.05rem solid rgb(190, 187, 192); */
   box-shadow:#302f2f;
   background-color: aliceblue;
 }
@@ -41,7 +41,6 @@
   color: #030303;
   font-size: large;
 }
-/* Basic Reset */
 
 
 /* Container & Card */
@@ -70,8 +69,9 @@
 
 /* Table Styles */
 .full-width-table {
-  width: 100%;
   border-collapse: collapse;
+  text-align: center;
+
 }
 
 .CTableTitle {
@@ -116,4 +116,12 @@
 
 .MKPagination:hover {
   background-color: #e7e7e7;
+}
+
+.full-width-table .title-cell {
+  width: 40%;
+  /* adjust this percentage as needed */
+}
+.boardTitle{
+  text-align: center;
 }
