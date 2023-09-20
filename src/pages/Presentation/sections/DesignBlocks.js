@@ -47,9 +47,10 @@ function DesignBlocks() {
                   pro={pro}
                   style={{
                     width: "100%",
-                    height: "15rem",
+                    // height: "14rem",
                     // opacity: hoveredItem === name ? 1 : 0.5,
                     transition: "transform 0.3s, opacity 0.3s",
+                    // objectFit: "cover",
                   }}
                 />
                 <h4>{name}</h4>

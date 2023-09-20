@@ -29,15 +29,15 @@ function Download() {
     <MKBox component="section" py={{ xs: 0, sm: 12 }}>
       {/* 기술스택 */}
       <Container>
-        <Grid container item xs={6} mx="auto">
+        <Grid container item xs={7} mx="auto">
           <MKBox textAlign="center">
             <MKTypography variant="h2" mt={6} mb={3}>
               <h2>My Skills</h2>
               <h5 className="title"> — what i know —</h5>
             </MKTypography>
             <Grid container spacing={1} justifyContent="center">
-              <Grid item xs={4} lg={2}>
-                <Tooltip title={<h4>java를 이용한 CRUD 구현이 가능합니다.</h4>}>
+              <Grid item xs={4} lg={1.7}>
+                <Tooltip title={<h4>JavaScript 기반의 컴포넌트 설계를 좋아합니다. </h4>}>
                   <MKBox
                     opacity={hoverId === 1 ? 1 : 0.5}
                     component="a"
@@ -52,14 +52,14 @@ function Download() {
                   >
                     <MKBox
                       component="img"
-                      src="https://github.com/solfany/solfany.github.io/assets/123814718/dfff7d21-3f13-406a-b983-b6305e313190"
+                      src="https://github.com/solfany/solfany.github.io/assets/123814718/a39b6315-af3f-4caa-b04f-52a92472e3ce"
                       width="100%"
                     />
                   </MKBox>
                 </Tooltip>
               </Grid>
-              <Grid item xs={4} lg={2}>
-                <Tooltip title={<h4>java를 이용한 CRUD 구현이 가능합니다.</h4>}>
+              <Grid item xs={4} lg={1.7}>
+                <Tooltip title={<h4>React를 활용한 SPA를 구축할 수 있습니다.</h4>}>
                   <MKBox
                     opacity={hoverId === 2 ? 1 : 0.5}
                     component="a"
@@ -80,8 +80,8 @@ function Download() {
                   </MKBox>
                 </Tooltip>
               </Grid>
-              <Grid item xs={4} lg={2}>
-                <Tooltip title={<h4>java를 이용한 CRUD 구현이 가능합니다.</h4>}>
+              <Grid item xs={4} lg={1.7}>
+                <Tooltip title={<h4>Java를 활용한 CRUD 구현에 익숙합니다</h4>}>
                   <MKBox
                     opacity={hoverId === 3 ? 1 : 0.5}
                     component="a"
@@ -96,14 +96,18 @@ function Download() {
                   >
                     <MKBox
                       component="img"
-                      src="https://github.com/solfany/solfany.github.io/assets/123814718/a39b6315-af3f-4caa-b04f-52a92472e3ce"
+                      src="https://github.com/solfany/solfany.github.io/assets/123814718/dfff7d21-3f13-406a-b983-b6305e313190"
                       width="100%"
                     />
                   </MKBox>
                 </Tooltip>
               </Grid>
-              <Grid item xs={4} lg={2}>
-                <Tooltip title={<h4>java를 이용한 CRUD 구현이 가능합니다.</h4>}>
+              <Grid item xs={4} lg={1.7}>
+                <Tooltip
+                  title={
+                    <h4>Spring 프레임워크를 이용한 클라이언트 통신 경험을 보유하고 있습니다.</h4>
+                  }
+                >
                   <MKBox
                     opacity={hoverId === 4 ? 1 : 0.5}
                     component="a"
@@ -124,8 +128,8 @@ function Download() {
                   </MKBox>
                 </Tooltip>
               </Grid>
-              <Grid item xs={4} lg={2}>
-                <Tooltip title={<h4>java를 이용한 CRUD 구현이 가능합니다.</h4>}>
+              <Grid item xs={4} lg={1.7}>
+                <Tooltip title={<h4>MySQL을 활용하여 데이터를 관리할 수 있습니다.</h4>}>
                   <MKBox
                     opacity={hoverId === 5 ? 1 : 0.5}
                     component="a"
@@ -146,8 +150,12 @@ function Download() {
                   </MKBox>
                 </Tooltip>
               </Grid>
-              <Grid item xs={4} lg={2}>
-                <Tooltip title={<h4>java를 이용한 CRUD 구현이 가능합니다.</h4>}>
+              <Grid item xs={4} lg={1.7}>
+                <Tooltip
+                  title={
+                    <h4>헤로쿠를 이용한 서버 배포 경험을 보유하며, AWS 교육을 이수하였습니다.</h4>
+                  }
+                >
                   <MKBox
                     opacity={hoverId === 6 ? 1 : 0.5}
                     component="a"
@@ -163,6 +171,28 @@ function Download() {
                     <MKBox
                       component="img"
                       src="https://github.com/solfany/solfany.github.io/assets/123814718/2643b725-7cf0-4f4e-aa1c-36c12c8ec4aa"
+                      width="100%"
+                    />
+                  </MKBox>
+                </Tooltip>
+              </Grid>
+              <Grid item xs={4} lg={1.7}>
+                <Tooltip title={<h4>Git Bash와 GitKraken을 활용한 팀 협업에 능숙합니다.</h4>}>
+                  <MKBox
+                    opacity={hoverId === 7 ? 1 : 0.5}
+                    component="a"
+                    href="#"
+                    target="_blank"
+                    onClick={(e) => e.preventDefault()}
+                    onMouseOver={() => handleMouseOver(7)}
+                    onMouseOut={handleMouseOut}
+                    style={{
+                      transition: "transform 0.3s, opacity 0.3s",
+                    }}
+                  >
+                    <MKBox
+                      component="img"
+                      src="https://github.com/solfany/portfolio/assets/123814718/76fe41c4-a523-4e27-8270-0a8516a11b0e"
                       width="100%"
                     />
                   </MKBox>

@@ -30,6 +30,7 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
       borderRadius="xl"
       shadow="lg"
       minHeight="10rem"
+      maxHeight="14rem"
       sx={{
         overflow: "hidden",
         transform: "perspective(999px) rotateX(0deg) translate3d(0, 0, 0)",
@@ -73,6 +74,9 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
         src={image}
         alt={name}
         width="100%"
+        height="100%" // 추가된 부분
+        objectFit="cover" // 추가된 부분
+        display="block" // 추가된 부분
         my="auto"
         opacity={pro ? 0.6 : 1}
       />

@@ -158,8 +158,8 @@ function Presentation() {
         <DesignBlocks />
         {/* 모달 입니당 */}
         <Counters />
-        <MKTypography variant="h2" fontWeight="bold" className="BolgTitle">
-          <h2>Bolg</h2>
+        <MKTypography variant="h2" fontWeight="bold" className="BlogTitle">
+          <h2>Blog</h2>
           <h5>— What did you study? —</h5>
         </MKTypography>
         <MKBox component="section" py={10}>
