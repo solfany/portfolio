@@ -11,7 +11,7 @@ import MKPagination from "components/MKPagination";
 import MKTypography from "components/MKTypography";
 import Stack from "@mui/material/Stack";
 import MKBadge from "components/MKBadge";
-
+import { postsData } from "./data/PostsData"; // 경로는 실제 파일 위치에 따라 조정해주세요.
 import Icon from "@mui/material/Icon";
 import "./css/index.css";
 import {
@@ -31,44 +31,9 @@ function Counters() {
   // 검색창 카테고리 분류 상태 관리하기
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
-  const posts = [
-    {
-      id: 1,
-      category: "오류게시판",
-      title: "첫 게시물 입니다.",
-      tags: ["안녕", "primary", "error"],
-      date: "2023-09-17",
-      author: "김솔비",
-    },
-    {
-      id: 2,
-      category: "오류게시판",
-      title: "두번째 게시물 입니다.",
-      tags: ["테스트", "success", "warning"],
-      date: "2023-09-18",
-      author: "이준",
-    },
-    {
-      id: 3,
-      category: "팀 프로젝트",
-      title: "세번째 게시물 입니다.",
-      tags: ["테스트", "success", "warning"],
-      date: "2023-09-18",
-      author: "이준",
-    },
-    {
-      id: 4,
-      category: "팀 프로젝트",
-      title: "네번째 게시물 입니다.",
-      tags: ["테스트", "success", "warning"],
-      date: "2023-09-18",
-      author: "이준",
-    },
-    // 게시글 여기에 추가하기
-  ];
   // 검색어와 카테고리에 따라 게시물 필터링하기
   // 처음에 필터를 포스트 메서드 위에 정의해서 오류 났었음
-  const filteredPosts = posts.filter(
+  const filteredPosts = postsData.filter(
     (post) =>
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
       (selectedCategory === "" || post.category === selectedCategory)

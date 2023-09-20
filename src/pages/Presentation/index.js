@@ -15,7 +15,7 @@ import SimpleFooter from "examples/Footers/SimpleFooter";
 
 // Presentation page sections
 // ---- 수치----------
-// import Counters from "pages/Presentation/sections/Counters";
+import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 
@@ -157,7 +157,7 @@ function Presentation() {
         {/* 프로젝트 */}
         <DesignBlocks />
         {/* 모달 입니당 */}
-        {/* <Counters /> */}
+        <Counters />
         <MKTypography variant="h2" fontWeight="bold" className="BolgTitle">
           <h2>Bolg</h2>
           <h5>— What did you study? —</h5>

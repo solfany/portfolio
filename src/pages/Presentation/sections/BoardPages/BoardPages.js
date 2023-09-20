@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Container from "@mui/material/Container";
 import MKBox from "components/MKBox";
-
+import "../css/CTableTitle.css";
 function BoardPages() {
   const { id } = useParams();
   const [post, setPost] = useState(null);
@@ -13,13 +13,34 @@ function BoardPages() {
       id: "1",
       title: "첫 번째 게시글",
       content: "첫 번째 게시글의 내용입니다.",
+      tags: ["안녕", "primary", "error"],
+      date: "2023-09-17",
+      author: "김솔비",
     },
     {
       id: "2",
       title: "두 번째 게시글",
       content: "두 번째 게시글의 내용입니다.",
+      tags: ["안녕", "primary", "error"],
+      date: "2023-09-17",
+      author: "김솔비",
     },
-    // ... 기타 게시글
+    {
+      id: "3",
+      title: "세 번째 게시글",
+      content: "두 번째 게시글의 내용입니다.",
+      tags: ["안녕", "primary", "error"],
+      date: "2023-09-17",
+      author: "김솔비",
+    },
+    {
+      id: "4",
+      title: "네 번째 게시글",
+      content: "두 번째 게시글의 내용입니다.",
+      tags: ["안녕", "primary", "error"],
+      date: "2023-09-17",
+      author: "김솔비",
+    },
   ];
 
   useEffect(() => {
