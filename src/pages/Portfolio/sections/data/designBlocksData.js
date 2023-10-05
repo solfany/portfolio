@@ -27,20 +27,21 @@ export default [
     description: "",
     items: [
       {
-        image: "",
+        image:
+          "https://github.com/solfany/portfolio/assets/123814718/74e7b81d-c5d9-4488-b426-f61c04320380",
         name: "개인 프로젝트",
-        text: "게시판 서비스",
+        text: "게시판 서비스  2023.9.20 ~2023.09.27",
         // count: 4,
-        route: "https://solfany.github.io/project01/",
+        route: "https://github.com/solfany/Spring-board-project",
       },
 
-      {
-        image: `/pagination.jpg`,
-        name: "개인 프로젝트",
-        text: "PT 이용권 관리 프로젝트",
-        // count: 3,
-        route: "/sections/navigation/pagination",
-      },
+      // {
+      //   image: `/pagination.jpg`,
+      //   name: "개인 프로젝트",
+      //   text: "PT 이용권 관리 프로젝트",
+      //   // count: 3,
+      //   route: "/sections/navigation/pagination",
+      // },
     ],
   },
 ];

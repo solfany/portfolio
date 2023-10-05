@@ -46,12 +46,13 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    <h1>저를 소개합니다.</h1>
                     <br />
-                    Material Kit
+                    <h3>저를 소개합니다.</h3>
+                    <br />
+                    <br />
+                    <br />
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
               />
               <RotatingCardBack image={bgBack} />
             </RotatingCard>
@@ -74,11 +75,12 @@ function Information() {
               <a href="mailto:solfany1999@gmail.com">solfany1999@gmail.com</a>
             </div>
             <br />
-            <h4>어렵고 힘든 일도 끝까지 시도하는 신입 개발자 김솔비입니다. </h4>
-            <h4>부단히 노력해 반드시 성공하는 개발자가 되고 싶습니다. </h4>
-            <h4>끝까지 같이 갈 수 있는 개발자로 멋진 파트너가 되어줄 곳을 찾습니다.</h4>
-            <h4>상세 이력은 아래 다운로드 받아주세요!</h4>
-            <MKButton variant="gradient" color="primary">
+            <h5>어렵고 힘든 일도 끝까지 시도하는 신입 개발자 김솔비입니다. </h5>
+            <h5>부단히 노력해 반드시 성공하는 개발자가 되고 싶습니다. </h5>
+            <h5>끝까지 같이 갈 수 있는 개발자로 멋진 파트너가 되어줄 곳을 찾습니다.</h5>
+            <h5>상세 이력은 아래 다운로드 받아주세요!</h5>
+            <br />
+            <MKButton variant="contained" color="dark">
               다운로드 ✔
             </MKButton>
           </Grid>

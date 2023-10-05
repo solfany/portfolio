@@ -7,12 +7,12 @@ import Grid from "@mui/material/Grid";
 import InputAdornment from "@mui/material/InputAdornment";
 import SearchIcon from "@mui/icons-material/Search";
 import MKInput from "components/MKInput";
-import MKPagination from "components/MKPagination";
+// import MKPagination from "components/MKPagination";
 import MKTypography from "components/MKTypography";
 import Stack from "@mui/material/Stack";
 import MKBadge from "components/MKBadge";
 import { postsData } from "./data/PostsData"; // 경로는 실제 파일 위치에 따라 조정해주세요.
-import Icon from "@mui/material/Icon";
+// import Icon from "@mui/material/Icon";
 import "./css/index.css";
 import {
   CTable,
@@ -56,7 +56,7 @@ function Counters() {
                   "카테고리를 선택하세요✅",
                   { label: "팀 프로젝트", value: "팀 프로젝트" },
                   { label: "개인 프로젝트", value: "개인 프로젝트" },
-                  { label: "오류게시판", value: "오류게시판" },
+                  { label: "이슈", value: "이슈" },
                 ]}
               />
             </Grid>
@@ -121,7 +121,7 @@ function Counters() {
               ))}
             </CTableBody>
           </CTable>
-          <div className="pagination">
+          {/* <div className="pagination">
             <MKPagination>
               <MKPagination item>
                 <Icon>keyboard_arrow_left</Icon>
@@ -135,7 +135,7 @@ function Counters() {
                 <Icon>keyboard_arrow_right</Icon>
               </MKPagination>
             </MKPagination>
-          </div>
+          </div> */}
         </CCard>
       </Container>
     </MKBox>

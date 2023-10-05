@@ -39,7 +39,7 @@ export default {
   menus: [
     {
       name: "Github",
-      items: [{ name: "about us", href: "https://www.creative-tim.com/presentation" }],
+      items: [{ name: "about us", href: "https://www.creative-tim.com/Portfolio" }],
     },
     {
       name: "Email",

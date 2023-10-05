@@ -11,11 +11,11 @@ import MKBox from "components/MKBox";
 // import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
-// Presentation page components
-import ExampleCard from "pages/Presentation/components/ExampleCard";
+// Portfolio page components
+import ExampleCard from "pages/Portfolio/components/ExampleCard";
 
 // Data
-import data from "pages/Presentation/sections/data/designBlocksData";
+import data from "pages/Portfolio/sections/data/designBlocksData";
 import "./css/index.css";
 
 function DesignBlocks() {

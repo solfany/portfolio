@@ -27,13 +27,13 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 // import Toggles from "layouts/sections/elements/toggles";
 // import Typography from "layouts/sections/elements/typography";
 
-import Presentation from "layouts/pages/presentation";
+// import Portfolio from "layouts/pages/Portfolio";
 const routes = [
-  {
-    name: "Home",
-    route: "/presentation",
-    component: <Presentation />,
-  },
+  // {
+  //   name: "Home",
+  //   route: "/Portfolio",
+  //   component: <Portfolio />,
+  // },
   // {
   //   name: "about us",
   //   route: "/pages/landing-pages/about-us",

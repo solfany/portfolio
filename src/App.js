@@ -6,11 +6,11 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import BoardPages from "pages/Presentation/sections/BoardPages/BoardPages";
+import BoardPages from "pages/Portfolio/sections/BoardPages/BoardPages";
 
 // Material Kit 2 React themes
 import theme from "assets/theme";
-import Presentation from "layouts/pages/presentation";
+import Portfolio from "layouts/pages/Portfolio";
 
 // Material Kit 2 React routes
 import routes from "routes";
@@ -42,9 +42,9 @@ export default function App() {
       <CssBaseline />
       <Routes>
         {getRoutes(routes)}
-        <Route path="/portfolio" element={<Presentation />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/boardpages/:id" element={<BoardPages />} />
-        <Route path="*" element={<Navigate to="/presentation" />} />
+        <Route path="*" element={<Navigate to="/Portfolio" />} />
       </Routes>
     </ThemeProvider>
   );

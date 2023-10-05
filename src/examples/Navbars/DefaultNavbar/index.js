@@ -539,7 +539,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // 로고 들어가는 자리
 DefaultNavbar.defaultProps = {
-  // brand: "김솔비의 portfolio",
+  // brand: " 개발 괴발",
   transparent: false,
   light: false,
   action: false,

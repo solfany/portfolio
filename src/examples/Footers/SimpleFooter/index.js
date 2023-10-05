@@ -31,22 +31,22 @@ function SimpleFooter({ company, light }) {
           justifyContent="center"
           alignItems="center"
           flexWrap="wrap"
-          color={light ? "white" : "text"}
+          color="white"
           fontSize={size.sm}
         >
           &copy; {new Date().getFullYear()}, made with
-          <MKBox fontSize={size.md} color={light ? "white" : "text"} mb={-0.5} mx={0.25}>
+          <MKBox fontSize={size.md} color={light ? "white" : "white"} mb={-0.5} mx={0.25}>
             <Icon color="inherit" fontSize="inherit">
               favorite
             </Icon>
           </MKBox>
           by
           <Link href={href} target="_blank">
-            <MKTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
+            <MKTypography variant="button" fontWeight="medium" color={light ? "white" : "white"}>
               &nbsp;{name}&nbsp;
             </MKTypography>
           </Link>
-          for a better web.
+          for a better portfolio 📝
         </MKBox>
         <MKBox
           component="ul"

@@ -13,24 +13,26 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import SimpleFooter from "examples/Footers/SimpleFooter";
 // import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
-// Presentation page sections
+// Portfolio page sections
 // ---- 수치----------
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
+// import Counters from "pages/Portfolio/sections/Counters";
+import Information from "pages/Portfolio/sections/Information";
+import DesignBlocks from "pages/Portfolio/sections/DesignBlocks";
 
-// import Pages from "pages/Presentation/sections/Pages";
-// import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
-// Presentation page components
-// import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+// import Pages from "pages/Portfolio/sections/Pages";
+// import Testimonials from "pages/Portfolio/sections/Testimonials";
+import Download from "pages/Portfolio/sections/Download";
+import MKButton from "components/MKButton";
+
+// Portfolio page components
+// import BuiltByDevelopers from "pages/Portfolio/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/main.png";
+import bgImage from "assets/images/8.png";
 import "./sections/css/index.css";
 
 // import MKButton from "components/MKButton";
@@ -48,7 +50,16 @@ import "./sections/css/index.css";
 // author 자기소개 페이지
 import TypeAsyncComponent from "./sections/TypeAsyncComponent";
 import "./index.css";
-function Presentation() {
+
+function handleButtonClick() {
+  const confirmation = window.confirm("김솔비의 github 로 이동하시겠습니까? 🫠");
+  if (confirmation) {
+    window.location.href = "https://github.com/solfany";
+  }
+  // 아니오를 클릭했을 때 아무런 작업도 수행하지 않습니다.
+}
+
+function Portfolio() {
   return (
     <>
       <DefaultNavbar
@@ -64,7 +75,7 @@ function Presentation() {
       />
       {/* -------- */}
       <MKBox
-        minHeight="85vh"
+        minHeight="75vh"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`,
@@ -72,11 +83,23 @@ function Presentation() {
           backgroundPosition: "top",
           display: "grid",
           placeItems: "center",
+          position: "relative", // 추가
+          "::before": {
+            // 추가
+            content: '""',
+            position: "absolute",
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+            background: "rgba(50, 50, 50, 0.6)", // 회색 오버레이
+            pointerEvents: "none",
+          },
         }}
       >
         {/* ---- */}
 
-        <Container>
+        <Container className="mainTitle">
           <Grid
             container
             item
@@ -85,7 +108,8 @@ function Presentation() {
             justifyContent="center"
             alignItems="center"
             flexDirection="column"
-            sx={{ mx: "auto", textAlign: "center" }}
+            sx={{ mx: "auto", alignItems: "baseline", textAlign: "left", marginLeft: "-10px" }}
+            className="mainTitle"
           >
             <MKTypography
               variant="h1"
@@ -103,14 +127,14 @@ function Presentation() {
             <MKTypography
               variant="body1"
               color="white"
-              opacity={0.8}
+              // opacity={0.8}
               mt={1}
               mb={3}
               sx={{
                 fontSize: "2rem", // 직접 크기 설정
               }}
             >
-              <h5>의 포트폴리오를 방문해주셔서 감사합니다.</h5>
+              <h4>의 포트폴리오를 방문해주셔서 감사합니다.</h4>
             </MKTypography>
             <div className="mampel-container">
               <TypeAsyncComponent /> {/* Add this line to include your component */}
@@ -138,8 +162,7 @@ function Presentation() {
           </Grid>
         </Container>
       </MKBox>
-
-      <Card
+      {/* <Card
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
@@ -149,6 +172,17 @@ function Presentation() {
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
+      > */}
+      <Card
+        sx={{
+          p: 2,
+          mx: { xs: 2, lg: 3 },
+          mt: -8,
+          mb: 4,
+          backgroundColor: "white", // 수정된 부분
+          // border: 3,
+          boxShadow: ({ boxShadows: { xxl } }) => xxl,
+        }}
       >
         {/* 자기소개 카드 */}
         <Information />
@@ -156,8 +190,10 @@ function Presentation() {
 
         {/* 프로젝트 */}
         <DesignBlocks />
-        {/* 모달 입니당 */}
-        <Counters />
+        {/* 게시판 입니당 */}
+        {/* <Counters /> */}
+
+        {/* 기술 블로그 */}
         <MKTypography variant="h2" fontWeight="bold" className="BlogTitle">
           <h2>Blog</h2>
           <h5>— What did you study? —</h5>
@@ -171,9 +207,18 @@ function Presentation() {
             />
           </Container>
         </MKBox>
-
+        <MKTypography variant="h2" fontWeight="bold" className="BlogTitle">
+          <MKButton onClick={handleButtonClick} size="large" color="dark">
+            Github 바로가기
+            <img
+              src="https://github.com/solfany/Spring-board-project/assets/123814718/a8324170-e54a-4651-8516-c45fd50802e2"
+              alt="Github Icon"
+              style={{ height: "1.2em", marginLeft: "8px" }}
+            />
+          </MKButton>
+        </MKTypography>
+        <MKBox component="section" py={3}></MKBox>
         {/* 모달입니다 */}
-        {/* <Pages /> */}
 
         {/* <Container> */}
         {/* <Grid container spacing={3}>
@@ -281,4 +326,4 @@ function Presentation() {
   );
 }
 
-export default Presentation;
+export default Portfolio;

@@ -1,12 +1,13 @@
 @font-face {
-  font-family: 'GangwonEdu_OTFBoldA';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 * {
-  font-family: 'GangwonEdu_OTFBoldA', sans-serif;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
   /* sans-serif는 대체 폰트로 지정됩니다. */
 }
 
@@ -22,7 +23,8 @@
 }
 
 .type-async {
-  color: rgb(132, 0, 255);
+  color: rgb(255, 255, 255);
+  font-size: x-large;
 }
 
 .informationIcon {
@@ -63,6 +65,16 @@
 .projectTitle {
   text-align: center;
 }
-.BlogTitle{
+.BlogTitle {
   text-align: center;
+}
+/* ============== */
+body {
+  background: linear-gradient(to right, #43507e, #5f486f);
+  perspective: 900px;
+  margin: 0;
+}
+
+.mainTitle {
+  align-items: baseline;
 }

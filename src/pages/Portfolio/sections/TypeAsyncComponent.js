@@ -21,21 +21,15 @@ class TypeAsyncComponent extends Component {
 
   async init() {
     while (this.state.isAnimating) {
-      await this.type("JavaScript");
+      await this.type("#백엔드 개발자");
       await sleep(2000);
-      await this.delete("JavaScript!");
-      await this.type("React");
+      await this.delete("#백엔드 개발자");
+      await this.type("#자바 개발자");
       await sleep(2000);
-      await this.delete("React");
-      await this.type("Java");
+      await this.delete("#자바 개발자");
+      await this.type("#꿈 꾸는 자");
       await sleep(2000);
-      await this.delete("Java");
-      await this.type("Spring");
-      await sleep(2000);
-      await this.delete("Spring");
-      await this.type("꿈꾸는 개발자");
-      await sleep(2000);
-      await this.delete("꿈꾸는 개발자");
+      await this.delete("#꿈 꾸는 자");
     }
   }
 
