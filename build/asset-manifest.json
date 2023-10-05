@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bb7ad8d5.css",
-    "main.js": "/portfolio/static/js/main.6a93cc45.js",
-    "static/media/8.png": "/portfolio/static/media/8.4feb601a138f4ec4a73a.png",
-    "static/media/solfany_portfolio.jpg": "/portfolio/static/media/solfany_portfolio.946455d680f602330917.jpg",
-    "static/media/solfany.png": "/portfolio/static/media/solfany.2eda91d7cd2e8ed7c406.png",
-    "static/media/location.png": "/portfolio/static/media/location.b510579c980dfd9a1fa2.png",
-    "static/media/person.png": "/portfolio/static/media/person.c920752422c11377083e.png",
-    "static/media/email2.png": "/portfolio/static/media/email2.14f7bbfb2ac2ccba4135.png",
-    "index.html": "/portfolio/index.html",
-    "main.bb7ad8d5.css.map": "/portfolio/static/css/main.bb7ad8d5.css.map",
-    "main.6a93cc45.js.map": "/portfolio/static/js/main.6a93cc45.js.map"
+    "main.css": "/Portfolio/static/css/main.bb7ad8d5.css",
+    "main.js": "/Portfolio/static/js/main.06893f0e.js",
+    "static/media/8.png": "/Portfolio/static/media/8.4feb601a138f4ec4a73a.png",
+    "static/media/solfany_portfolio.jpg": "/Portfolio/static/media/solfany_portfolio.946455d680f602330917.jpg",
+    "static/media/solfany.png": "/Portfolio/static/media/solfany.2eda91d7cd2e8ed7c406.png",
+    "static/media/location.png": "/Portfolio/static/media/location.b510579c980dfd9a1fa2.png",
+    "static/media/person.png": "/Portfolio/static/media/person.c920752422c11377083e.png",
+    "static/media/email2.png": "/Portfolio/static/media/email2.14f7bbfb2ac2ccba4135.png",
+    "index.html": "/Portfolio/index.html",
+    "main.bb7ad8d5.css.map": "/Portfolio/static/css/main.bb7ad8d5.css.map",
+    "main.06893f0e.js.map": "/Portfolio/static/js/main.06893f0e.js.map"
   },
   "entrypoints": [
     "static/css/main.bb7ad8d5.css",
-    "static/js/main.6a93cc45.js"
+    "static/js/main.06893f0e.js"
   ]
 }
