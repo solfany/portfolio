@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import MKTypography from "components/MKTypography";
+
 import "./css/index.css";
 
 function sleep(ms) {
@@ -55,10 +57,17 @@ class TypeAsyncComponent extends Component {
     const { text } = this.state;
 
     return (
-      <div className="type-async">
+      <MKTypography
+        className="type-async"
+        color="white"
+        opacity={0.9}
+        sx={{
+          fontSize: "1.5rem", // 직접 크기 설정
+        }}
+      >
         <span>{text}</span>
         <span className="blinking-cursor">_</span>
-      </div>
+      </MKTypography>
     );
   }
 }

@@ -76,8 +76,8 @@ function DesignBlocks() {
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
           <MKTypography variant="h2" fontWeight="bold">
-            <h2> Project </h2> {/* 오타가 있어서 수정했습니다. */}
-            <h5>— what a made —</h5>
+            <h2> Project </h2>
+            <h5 className="title">— what a made —</h5>
           </MKTypography>
         </Grid>
       </Container>

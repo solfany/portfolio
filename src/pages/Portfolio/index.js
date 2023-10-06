@@ -108,16 +108,16 @@ function Portfolio() {
             justifyContent="center"
             alignItems="center"
             flexDirection="column"
-            sx={{ mx: "auto", alignItems: "baseline", textAlign: "left", marginLeft: "-10px" }}
+            sx={{ mx: "auto", alignItems: "baseline", textAlign: "left", marginLeft: "-1px" }}
             className="mainTitle"
           >
             <MKTypography
               variant="h1"
+              opacity={0.9}
               color="white"
               sx={({ breakpoints }) => ({
-                fontSize: "4rem", // 직접 rem 단위나 다른 단위로 크기 설정
                 [breakpoints.down("md")]: {
-                  fontSize: "3rem",
+                  fontSize: "2.5rem",
                 },
               })}
               className="mainTitle"
@@ -127,7 +127,7 @@ function Portfolio() {
             <MKTypography
               variant="body1"
               color="white"
-              // opacity={0.8}
+              opacity={0.9}
               mt={1}
               mb={3}
               sx={{
@@ -136,9 +136,9 @@ function Portfolio() {
             >
               <h4>의 포트폴리오를 방문해주셔서 감사합니다.</h4>
             </MKTypography>
-            <div className="mampel-container">
+            <MKTypography className="mampel-container" color="white" opacity={0.9}>
               <TypeAsyncComponent /> {/* Add this line to include your component */}
-            </div>
+            </MKTypography>
             {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
             </MKButton> */}

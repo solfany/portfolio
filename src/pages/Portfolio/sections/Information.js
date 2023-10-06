@@ -36,9 +36,9 @@ import "./css/index.css";
 
 function Information() {
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={1} my={6}>
       <Container>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
+        <Grid container item xs={12} spacing={0} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto", order: { xs: 2, md: 1 } }}>
             <RotatingCard>
               <RotatingCardFront
@@ -57,8 +57,16 @@ function Information() {
               <RotatingCardBack image={bgBack} />
             </RotatingCard>
           </Grid>
-          <Grid item xs={12} lg={7} sx={{ order: { xs: 2, md: 2 } }}>
-            <MKTypography variant="h2">
+          <Grid item xs={12} lg={5} sx={{ order: { xs: 2, md: 2 } }}>
+            <MKTypography
+              variant="h2"
+              sx={({ breakpoints }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: "2rem",
+                },
+              })}
+              className="mainTitle"
+            >
               <h2>About Me</h2>
             </MKTypography>
             <h2 className="title"> — who i am —</h2>
