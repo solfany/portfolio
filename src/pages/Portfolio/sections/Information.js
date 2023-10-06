@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -24,7 +9,7 @@ import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// import MKButton from "components/MKButton";
 // import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import personImg from "assets/images/person.png";
 import location from "assets/images/location.png";
@@ -85,12 +70,7 @@ function Information() {
             <br />
             <h5>어렵고 힘든 일도 끝까지 시도하는 신입 개발자 김솔비입니다. </h5>
             <h5>부단히 노력해 반드시 성공하는 개발자가 되고 싶습니다. </h5>
-            <h5>끝까지 같이 갈 수 있는 개발자로 멋진 파트너가 되어줄 곳을 찾습니다.</h5>
-            <h5>상세 이력은 아래 다운로드 받아주세요!</h5>
-            <br />
-            <MKButton variant="contained" color="dark">
-              다운로드 ✔
-            </MKButton>
+            <h5>끝까지 같이 갈 수 있는 개발자로 멋진 파트너가 되어줄 곳을 찾습니다. 📝 </h5>
           </Grid>
         </Grid>
       </Container>
