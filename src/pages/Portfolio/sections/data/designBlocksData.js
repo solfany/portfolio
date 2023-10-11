@@ -12,6 +12,12 @@ export default [
         // count: 14,
         route: "https://github.com/solfany/gameShop_project",
       },
+    ],
+  },
+  {
+    title: "",
+    description: "",
+    items: [
       {
         image:
           "https://github.com/solfany/portfolio/assets/123814718/7c594e55-b8b4-4edc-b207-85e37752542e",
