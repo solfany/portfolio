@@ -52,7 +52,7 @@ function Download() {
                   >
                     <MKBox
                       component="img"
-                      src="https://github.com/solfany/solfany.github.io/assets/123814718/a39b6315-af3f-4caa-b04f-52a92472e3ce"
+                      src="https://github.com/solfany/portfolio/assets/123814718/58d41ad5-6c30-401e-acf0-b4df63639e9c"
                       width="100%"
                     />
                   </MKBox>
@@ -74,7 +74,7 @@ function Download() {
                   >
                     <MKBox
                       component="img"
-                      src="https://github.com/solfany/solfany.github.io/assets/123814718/14791da6-32d1-43fa-8520-6058290da3d4"
+                      src="https://github.com/solfany/portfolio/assets/123814718/69a355dc-41de-4d1c-abdb-f76f9483f78d"
                       width="100%"
                     />
                   </MKBox>
@@ -96,7 +96,7 @@ function Download() {
                   >
                     <MKBox
                       component="img"
-                      src="https://github.com/solfany/solfany.github.io/assets/123814718/dfff7d21-3f13-406a-b983-b6305e313190"
+                      src="https://github.com/solfany/portfolio/assets/123814718/6652bd30-dd65-4a25-92c6-30181fbb7ada"
                       width="100%"
                     />
                   </MKBox>
@@ -144,7 +144,7 @@ function Download() {
                   >
                     <MKBox
                       component="img"
-                      src="https://github.com/solfany/solfany.github.io/assets/123814718/bfe5566d-d529-4ed2-9e5f-51caa2f62565"
+                      src="https://github.com/solfany/portfolio/assets/123814718/19814849-bb03-4eb2-8b14-d093789b369a"
                       width="100%"
                     />
                   </MKBox>
@@ -170,7 +170,7 @@ function Download() {
                   >
                     <MKBox
                       component="img"
-                      src="https://github.com/solfany/solfany.github.io/assets/123814718/2643b725-7cf0-4f4e-aa1c-36c12c8ec4aa"
+                      src="https://github.com/solfany/portfolio/assets/123814718/8420ae88-77c3-4bfb-9151-d38a4f065973"
                       width="100%"
                     />
                   </MKBox>
@@ -192,7 +192,7 @@ function Download() {
                   >
                     <MKBox
                       component="img"
-                      src="https://github.com/solfany/portfolio/assets/123814718/76fe41c4-a523-4e27-8270-0a8516a11b0e"
+                      src="https://github.com/solfany/portfolio/assets/123814718/b1db07df-d845-4ef6-8225-9bd3a09ff481"
                       width="100%"
                     />
                   </MKBox>

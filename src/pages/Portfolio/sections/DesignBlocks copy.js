@@ -9,40 +9,24 @@ import ExampleCard from "pages/Portfolio/components/ExampleCard";
 import data from "pages/Portfolio/sections/data/designBlocksData";
 import { styled } from "@mui/system";
 import "./css/index.css";
+
 const InstagramButton = styled(Button)(({ theme }) => ({
-  background:
-    "linear-gradient(45deg, rgba(245, 133, 41, 0.1), rgba(221, 42, 123, 0.1), rgba(129, 52, 175, 0.1), rgba(81, 91, 212, 0.1))",
-  borderRadius: "6px",
-  width: "70%", // 수정된 부분
-  height: "60%", // 수정된 부분
-  color: "rgba(255, 255, 255, 0.7)",
+  background: "linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4)", // Instagram gradient
+  borderRadius: "10px",
+  width: "70%",
+  height: "60%",
+  color: "white",
   border: "none",
   padding: theme.spacing(1, 3),
   boxShadow: "0 3px 5px 2px rgba(0, 0, 0, 0.1)",
   textTransform: "none",
   fontWeight: "bold",
-  position: "relative", // 추가
-
-  // ::before pseudo-element 추가
-  "&::before": {
-    content: '""',
-    position: "absolute",
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0,
-    zIndex: -1,
-    background:
-      "linear-gradient(45deg, rgba(245, 133, 41, 0.1), rgba(221, 42, 123, 0.1), rgba(129, 52, 175, 0.1), rgba(81, 91, 212, 0.1))",
-    filter: "blur(2px)", // 블러 적용
-  },
   "&:hover": {
-    background:
-      "linear-gradient(45deg, rgba(221, 42, 123, 0.2), rgba(129, 52, 175, 0.2), rgba(81, 91, 212, 0.2), rgba(245, 133, 41, 0.1))",
+    background: "linear-gradient(45deg, #dd2a7b, #8134af, #515bd4, #f58529)", // Slightly shift the gradient on hover
     boxShadow: "0 3px 6px 2px rgba(0, 0, 0, 0.2)",
     transform: "translateY(-2px)",
   },
-  transition: "0.10s",
+  transition: "0.3s",
 }));
 
 function DesignBlocks() {
@@ -78,28 +62,8 @@ function DesignBlocks() {
           <Grid container spacing={1} item xs={6}>
             {button?.slice(0, 6).map((btn, index) => (
               <Grid item xs={4} md={4} key={index}>
-                <InstagramButton
-                  variant="contained"
-                  component="a"
-                  href={btn.button1}
-                  style={{
-                    // width: "100%",
-                    // height: "100%",
-                    overflow: "hidden",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <img
-                    src={btn.btnimage}
-                    alt={`Button ${index + 1}`}
-                    style={{
-                      objectFit: "cover",
-                      width: "60px",
-                      height: "60px",
-                    }}
-                  />
+                <InstagramButton variant="contained" component="a" href="#">
+                  <img src="#" alt={`Button ${index + 1}`} width="100%" height="100%" />
                 </InstagramButton>
               </Grid>
             ))}
@@ -124,7 +88,7 @@ function DesignBlocks() {
               sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
             >
               <MKTypography variant="h2" fontWeight="bold">
-                <h2>Project</h2>
+                Project
                 <h5 className="title">— what I made —</h5>
               </MKTypography>
             </Grid>
